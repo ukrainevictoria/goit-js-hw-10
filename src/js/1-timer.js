@@ -64,9 +64,8 @@ function startTimer() {
     updateTimer(time);
   }, 1000);
 }
-
 function updateTimer({ days, hours, minutes, seconds }) {
-  daysEl.textContent = days;
+  daysEl.textContent = addLeadingZero(days);
   hoursEl.textContent = addLeadingZero(hours);
   minutesEl.textContent = addLeadingZero(minutes);
   secondsEl.textContent = addLeadingZero(seconds);
